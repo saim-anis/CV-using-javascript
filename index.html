@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume/CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-body">
+        <div class="resume-header">
+            <h1>Muhammad Saim</h1>
+            <p>Email: Saimjj4501@gmail.com | Phone: +92 123 456 7890 </p>
+    </div> 
+<div class="img">
+<img src="gamer-boy.png" alt="" width="200px" height="200px" id="myImage"">
+<button onclick="showImage()" id="showPic">Click here for image</button>
+</div>
+<button onclick="showEducation()">Click here for Education</button>
+<div class="personalinfo">
+    
+    <h1>Education:</h1>
+    <ul>
+        <li>Bachelor of Science in Computer Science from Iqra University, 2000-2010</li>
+        <li>High School Diploma, Arif High School, 2018-2020</li>
+        <li>Matriculation, Arif High School, 2016-2018</li>
+
+    </ul>
+
+</div>
+
+<button onclick="showSkills()">Click here for Skills</button>
+<div class="skills">
+    <h1>Skills:</h1>
+    <ul>
+        <li>Programming Languages: JavaScript, Python, C++</li>
+        <li>Web Development: HTML, CSS, React</li>
+        <li>Database Management: MySQL, MongoDB</li>
+        <li>Version Control: Git, GitHub</li>
+    </ul>
+   
+</div>
+ 
+<form id="myForm">
+    <label >Name:</label>
+    <input type="text" placeholder="Muhammad Saim"> <br> <br>
+    <label >Email:</label>
+    <input type="email" placeholder="saimjj4501@gmail.com">
+    <br> <br>
+    <button type="submit" id="submitBtn" onclick="submitForm()">Submit</button>
+</form>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
