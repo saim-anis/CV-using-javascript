@@ -46,13 +46,25 @@ function showSkills() {
 
 let formSubmit = document.getElementById("myForm");
 
+function submitForm(event) {
+ event.preventDefault();
 
-function submitForm() {
-    if (myForm === " ") {
-        alert("Please enter your name and email");
-    }else {
-        alert("Form submitted successfully");
-    }
-     
- 
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+
+  const nameError = document.getElementById("nameError");
+  const emailError = document.getElementById("emailError");
+  const successMessage = document.getElementById("successMessage");
+
+  
+
+  if (name === "") {
+    alert("Please enter your name!");
+  } else if (email === "") {
+   alert("Please enter your email!");
+  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+     alert("Please enter a valid email!");
+  } else {
+    successMessage.textContent = "✅ Form submitted successfully!";
+  }
 }

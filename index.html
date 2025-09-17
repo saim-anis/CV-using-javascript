@@ -41,14 +41,20 @@
    
 </div>
  
-<form id="myForm">
-    <label >Name:</label>
-    <input type="text" placeholder="Muhammad Saim"> <br> <br>
-    <label >Email:</label>
-    <input type="email" placeholder="saimjj4501@gmail.com">
-    <br> <br>
-    <button type="submit" id="submitBtn" onclick="submitForm()">Submit</button>
-</form>
+ <form id="myForm" onsubmit="return submitForm(event)">
+    <label>Name:</label>
+    <input type="text" id="name" placeholder="Muhammad Saim">
+    <div id="nameError" class="error"></div>
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" id="email" placeholder="saimjj4501@gmail.com">
+    <div id="emailError" class="error"></div>
+    <br><br>
+
+    <button type="submit" id="submitBtn">Submit</button>
+    <div id="successMessage" class="success"></div>
+  </form>
 </div>
 
     <script src="script.js"></script>
